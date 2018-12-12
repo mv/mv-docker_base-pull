@@ -30,5 +30,5 @@ For development purposes, those images are a reference for comparison in pursuin
     busybox       latest           59788edf1f3e 1.15MB
 
 
-Last date: 2018-12-10
+Last update: 2018-12-10
 
