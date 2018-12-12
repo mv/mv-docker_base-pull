@@ -25,7 +25,11 @@ pull:
 	| bash -x
 
 imgs:
-	docker images
+	docker images -q \
+	  --filter dangling=false \
+	  --format "{{.Repository}}:{{.Tag}} {{.ID}} {{.Size}} {{.CreatedAt}}" \
+	  | egrep '^alpine|^busybox|^amazonlinux|^centos|^fedora|^ubuntu|^debian|^python' \
+	  | column -t
 
 clean:
 	@echo "Todo..."
