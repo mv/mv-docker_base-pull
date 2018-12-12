@@ -32,3 +32,12 @@ For development purposes, those images are a reference for comparison in pursuin
 
 Last update: 2018-12-10
 
+## Tasks
+
+Tasks in `Makefile`:
+
+    make show  - show current list of base images
+    make pull  - pull listed base images
+    make imgs  - Run 'docker images'
+
+
